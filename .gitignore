@@ -1,32 +1,125 @@
-# Prerequisites
-*.d
+####################
+# Usual build folders
+#
 
-# Compiled Object files
+build/
+build-clion/
+cmake-build-debug/
+cmake-build-debug-ios/
+cmake-build-debug-vscode/
+cmake-build-release/
+cmake-build-release-ios/
+cmake-build-release-vscode/
+cmake-build/
+.build/
+bin/
+gen/
+out/
+
+
+####################
+# CMake
+#
+
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+
+####################
+# C / C++
+#
+
+*.d
 *.slo
 *.lo
-*.o
+*.ko
 *.obj
-
-# Precompiled Headers
+*.elf
+*.ilk
+*.map
+*.exp
 *.gch
 *.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
 *.dll
-
-# Fortran module files
 *.mod
 *.smod
-
-# Compiled Static libraries
 *.lai
 *.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
 *.app
+*.i*86
+*.x86_64
+*.hex
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+
+####################
+# JetBrains
+#
+
+.idea
+*.iws
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+
+####################
+# Xcode
+#
+
+*~.nib
+*.xccheckout
+*.xcscmblueprint
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+xcuserdata
+!xcshareddata
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+
+
+####################
+# VSCode
+#
+
+.vscode
+
+
+####################
+# macOS
+#
+
+.DS_Store
+.DS_Store?
+.Trashes
+.Spotlight-V100
+*.swp
+profile
+
