@@ -67,11 +67,16 @@ juce_add_plugin(AutoPan
 # Finally, we supply a list of source files that will be built into the target. This is a standard
 # CMake command.
 
+file(GLOB_RECURSE AutoPan_sources
+        *.cpp)
+
+file(GLOB_RECURSE AutoPan_headers
+        *.h)
+
 target_sources(AutoPan
     PRIVATE
-        PluginEditor.cpp
-        PluginProcessor.cpp
-        AutoPan.cpp)
+        ${AutoPan_sources}
+        ${AutoPan_headers})
 
 # `target_compile_definitions` adds some preprocessor definitions to our target. In a Projucer
 # project, these might be passed in the 'Preprocessor Definitions' field. JUCE modules also make use
